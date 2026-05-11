@@ -1,14 +1,16 @@
 import { useState } from 'react'
 import "./style/style.scss"
+import { Navbar } from './components/navBar/nav'
+import { BrowserRouter } from 'react-router'
 
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-    <h1>hej</h1>
-    </>
+    <BrowserRouter>
+    <Navbar/>
+    </BrowserRouter>
   )
 }
 

@@ -1,0 +1,22 @@
+// Styling til Navbar
+
+.navStyling{
+    display: flex;
+    flex-direction: row;
+    // test på mellemrum
+    justify-content: space-between;
+    gap: 4px;
+    background-color: #201e1e;
+
+    div {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+   
+
+}
