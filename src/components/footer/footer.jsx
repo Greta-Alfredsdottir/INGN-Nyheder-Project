@@ -8,8 +8,8 @@ export function Footer(){
           <div>
             <p>Adresse:</p>
             <p>Intet nyt - Godt nyt ApS</p>
-            <p>Tulipanvej 232
-                7320
+            <p>Tulipanvej 232 <br/>
+                7320 <br/>
                 Valby Øster
             </p>
           </div>
