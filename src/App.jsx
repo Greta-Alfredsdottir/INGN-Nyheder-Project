@@ -1,7 +1,15 @@
 import { useState } from 'react'
 import "./style/style.scss"
 import { Navbar } from './components/navBar/nav'
-import { BrowserRouter } from 'react-router'
+import { BrowserRouter, Route, Routes } from 'react-router'
+import { Alle } from './pages/alle'
+import { Indland } from './pages/indland'
+import { Udland } from './pages/udland'
+import { Teknologi } from './pages/teknologi'
+import { Sport } from './pages/sport'
+import { Politik } from './pages/politik'
+import { Samfund } from './pages/samfund'
+import { Footer } from './components/footer/footer'
 
 
 function App() {
@@ -10,6 +18,16 @@ function App() {
   return (
     <BrowserRouter>
     <Navbar/>
+    <Routes>
+      <Route path="/" element={<Alle/>}/>
+      <Route path="/indland" element={<Indland/>}/>
+      <Route path="/udland" element={<Udland/>}/>
+      <Route path="/teknologi" element={<Teknologi/>}/>
+      <Route path="/sport" element={<Sport/>}/>
+      <Route path="/politik" element={<Politik/>}/>
+      <Route path="/samfund" element={<Samfund/>}/>
+    </Routes>
+    <Footer/>
     </BrowserRouter>
   )
 }

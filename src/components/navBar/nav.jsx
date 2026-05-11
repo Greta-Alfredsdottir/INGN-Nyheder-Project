@@ -3,7 +3,7 @@ import style from './nav.module.scss';
 
 export function Navbar() {
     return(
-        <header>
+       
         <nav className={style.navStyling}>
             <div>
                 <NavLink to="/">Alle</NavLink>
@@ -15,6 +15,6 @@ export function Navbar() {
                 <NavLink to="/samfund">Samfund</NavLink>
             </div>
         </nav>
-        </header>
+        
     )
 }
