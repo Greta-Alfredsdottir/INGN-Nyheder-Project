@@ -4,7 +4,6 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    // test på mellemrum
     justify-content: center;
     gap: 4px;
     background-color: #ffffff;
@@ -23,7 +22,7 @@
        }
 
 }
-section{
+.section{
     position: absolute;
     color: #c52525;
     left: 0;

@@ -5,7 +5,7 @@ export function Navbar() {
     return(
        
         <nav className={style.navStyling}>
-            <section>INGN</section>
+            <section className={style.section}>INGN</section>
             {/* Altid kalde det "NavLink" når "Link" bruges i navbar */}
             <div>
                 <NavLink to="/">Alle</NavLink>

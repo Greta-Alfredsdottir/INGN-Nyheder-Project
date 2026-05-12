@@ -4,7 +4,7 @@ import style from "./footer.module.scss"
 export function Footer(){
 
     return(
-        <footer>
+        <footer className={style.footer}>
           <div>
             <p>Adresse:</p>
             <p>Intet nyt - Godt nyt ApS</p>

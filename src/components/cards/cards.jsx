@@ -1,6 +1,6 @@
 import style from "./cards.module.scss"
 
-export function Cards(){
+export const ArticleCards(){
 
     return(
         <section>
