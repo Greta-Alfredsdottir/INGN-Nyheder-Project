@@ -10,6 +10,8 @@ import { Sport } from './pages/sport'
 import { Politik } from './pages/politik'
 import { Samfund } from './pages/samfund'
 import { Footer } from './components/footer/footer'
+import { Cards } from './components/cards/cards'
+
 
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
       <Route path="/politik" element={<Politik/>}/>
       <Route path="/samfund" element={<Samfund/>}/>
     </Routes>
+    <BodyCard />
     <Footer/>
     </BrowserRouter>
   )
