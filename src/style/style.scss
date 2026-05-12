@@ -1,14 +1,14 @@
 #root{
     background-color: aquamarine;
-
 }
+
 span{
     font-weight: bold;
 }
 
 
 
-
+// Responsive
 @media (max-width: 600px) {
     #root{background-color: red;
 }}

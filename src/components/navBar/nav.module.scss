@@ -1,14 +1,15 @@
 // Styling til Navbar
 
 .navStyling{
+    position: relative;
     display: flex;
     flex-direction: row;
     // test på mellemrum
     justify-content: center;
     gap: 4px;
     background-color: #ffffff;
-
-      
+    
+    
     div {
         display: flex;
         flex-direction: row;
@@ -21,6 +22,11 @@
         color: #242424;
        }
 
-   
+}
+section{
+    position: absolute;
+    color: #c52525;
+    left: 0;
 
+  
 }
