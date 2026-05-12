@@ -7,7 +7,7 @@ export const NyhederBilleder = {
   url: "",
 };
 
-export const NyhedsCards = {
+export const nyhedscards = {
   overskrift: "",
   indhold: NyhederText,
   dato: "",
