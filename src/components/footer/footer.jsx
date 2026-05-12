@@ -15,10 +15,10 @@ export function Footer(){
           </div>
           <div>
             <p>Links</p>
-            <p><a href="vikanweb.dk">vikanweb.dk</a></p>
-            <p><a href="overpådenandenside.dk">overpådenandenside.dk</a></p>
-            <p><a href= "retsinformation.dk">retsinformation.dk</a></p>
-            <a href="nogetmednews.dk">nogetmednews.dk</a>
+            <p>vikanweb.dk</p>
+            <p>overpådenandenside.dk</p>
+            <p>retsinformation.dk</p>
+            <p>nogetmednews.dk</p>
           </div>
           <div>
             <p>Politik</p>
@@ -29,9 +29,9 @@ export function Footer(){
           </div>
           <div>
             <p>Kontakt</p>
-            <a href="ingn@nyhed.dk">ingn@nyhed.dk</a>
-            <p><a href="tel: +4523232323">Telefone: 4523232323</a></p>
-            <p><a href="fax: 123123-333">fax: 123123-333</a></p>
+            <p>ingn@nyhed.dk</p>
+            <p>Telefone: 23232323</p>
+            <p>fax: 123123-333</p>
           </div>
              
         </footer>

@@ -29,7 +29,6 @@ function App() {
       <Route path="/politik" element={<Politik/>}/>
       <Route path="/samfund" element={<Samfund/>}/>
     </Routes>
-    
     <BodyCard/>
     <ArticleCards/>
     <Footer/>
