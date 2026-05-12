@@ -1,22 +1,22 @@
 
 // richText, skal laves i textString
-export const nyhederText = {
+export const NyhederText = {
   text: "",
 };
-export const nyhederBilleder = {
+export const NyhederBilleder = {
   url: "",
 };
 
-export const nyhedscards = {
+export const NyhedsCards = {
   overskrift: "",
-  indhold: nyhederText,
+  indhold: NyhederText,
   dato: "",
   skribent: "",
   kategori: "",
-  billeder: nyhederBilleder
+  billeder: NyhederBilleder
 
 };
 
-export const nyhederResponse = {
-  nyhedscards: [],
+export const NyhederResponse = {
+  Nyhedscards: [],
 };
