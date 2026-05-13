@@ -1,5 +1,9 @@
 
 
-.gamlekrop{
-    background-color: darkseagreen;
+.gamlekrop {
+    background-color: #f6f3f3;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
