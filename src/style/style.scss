@@ -9,4 +9,5 @@ span{
 // Responsive
 @media (max-width: 600px) {
     #root{background-color: red;
+        grid-template-columns: 1fr !important;
 }}
