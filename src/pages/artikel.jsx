@@ -1,3 +1,4 @@
+// lavet med hjælp af copilot
 import { useParams } from 'react-router'
 import { useGraphQuery } from '../utils/hook'
 import { Query } from '../utils/Query'

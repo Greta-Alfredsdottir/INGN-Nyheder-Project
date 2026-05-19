@@ -28,10 +28,9 @@
 }
 
 .billeder {
-    width: 100%;
-    height: auto;
+    max-width: 100%;
     border-radius: 4px;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 // Desktop layout - fancy grid positions, Dette er lavet med hjælp af copilot
@@ -50,18 +49,26 @@
 
     .cardContainer:nth-child(3) {
         grid-row-start: 2;
-        height: 50%;
+        img{ 
+            height: 200px;
+        }
     }
 
     .cardContainer:nth-child(4) {
         grid-column-start: 1;
         grid-row-start: 4;
+        img{
+            height: 200px;
+        }
     }
 
     .cardContainer:nth-child(5) {
         grid-row: span 2 / span 2;
         grid-column-start: 2;
         grid-row-start: 3;
+        img{
+            height: 700px;
+        }
     }
 
     .cardContainer:nth-child(6) {
