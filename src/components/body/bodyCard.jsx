@@ -1,3 +1,4 @@
+//Lavet med hjælp af copilot og ældre opgaver
 import style from "./bodyCard.module.scss"
 import { useGraphQuery } from "../../utils/hook";
 import { Query } from "../../utils/Query";
@@ -14,11 +15,11 @@ export const BodyCard = ({ kategori }) => {
     
     if (isLoading){
         return <div>Indlæser Nyheder</div>;
-    }
+    } // Her kommer der fejl melding hvis den ikke finder noget
     if (error) {
         return <div>Fejl ved indlæsning {error.message}</div>
     }
-    
+    // Her kommer der besked, hvis der er fejl
     if (NyhedsCards.length === 0) {
         return <div>Ingen artikler fundet</div>;
     }
