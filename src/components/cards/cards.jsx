@@ -6,7 +6,9 @@ export const ArticleCards = ({NyhedsCard}) => {
     if (!NyhedsCard) {
         return null;
     }
-    const dateObj = new Date(NyhedsCard.dato);
+    //Laver datoen om til et JavaScript Date-objekt.
+    const dateObj = new Date(NyhedsCard.dato); 
+    //getMonth() starter fra 0, derfor +1.
     const date = `${dateObj.getDate()}/${dateObj.getMonth() + 1}-${dateObj.getFullYear()}`;
 
     return(

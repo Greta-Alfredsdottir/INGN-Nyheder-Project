@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import "./style/style.scss"
 import { Navbar } from './components/navBar/nav'
 import { BrowserRouter, Route, Routes } from 'react-router'
@@ -11,7 +10,6 @@ import { Politik } from './pages/politik'
 import { Samfund } from './pages/samfund'
 import { Artikel } from './pages/artikel'
 import { Footer } from './components/footer/footer'
-import { BodyCard } from "./components/body/bodyCard";
 import { ArticleCards } from './components/cards/cards'
 
 
