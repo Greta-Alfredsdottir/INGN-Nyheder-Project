@@ -2,7 +2,15 @@
 .gamlekrop {
     background-color: #f6f3f3;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     grid-auto-rows: fit-content;
     gap: 8px;
+    padding: 16px;
+}
+
+// Desktop - 2 kolonne layout
+@media (min-width: 768px) {
+    .gamlekrop {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
