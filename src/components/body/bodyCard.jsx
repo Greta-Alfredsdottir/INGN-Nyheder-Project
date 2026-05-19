@@ -29,9 +29,6 @@ export const BodyCard = ({ kategori }) => {
             {NyhedsCards.map((nyhedscards, index) =>(
                 <ArticleCards key={`${nyhedscards.overskrift}-${index}`} NyhedsCard={nyhedscards}/>
             ))}
-          
-          
-         
         </section>
     )
 }
