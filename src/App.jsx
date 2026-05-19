@@ -9,6 +9,7 @@ import { Teknologi } from './pages/teknologi'
 import { Sport } from './pages/sport'
 import { Politik } from './pages/politik'
 import { Samfund } from './pages/samfund'
+import { Artikel } from './pages/artikel'
 import { Footer } from './components/footer/footer'
 import { BodyCard } from "./components/body/bodyCard";
 import { ArticleCards } from './components/cards/cards'
@@ -28,9 +29,8 @@ function App() {
       <Route path="/sport" element={<Sport/>}/>
       <Route path="/politik" element={<Politik/>}/>
       <Route path="/samfund" element={<Samfund/>}/>
+      <Route path="/artikel/:slug" element={<Artikel/>}/>
     </Routes>
-    <BodyCard/>
-    <ArticleCards/>
     <Footer/>
     </BrowserRouter>
   )

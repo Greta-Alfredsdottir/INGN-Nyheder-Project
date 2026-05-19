@@ -8,6 +8,7 @@ export const NyhederBilleder = {
 };
 
 export const nyhedscards = {
+  slug: "",
   overskrift: "",
   indhold: NyhederText,
   dato: "",

@@ -1,8 +1,5 @@
-
+import { BodyCard } from '../components/body/bodyCard'
 
 export function Indland(){
-
-    return(
-        <h2>Vill ikke</h2>
-    )
+    return <BodyCard kategori="indland"/>
 }

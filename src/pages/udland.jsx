@@ -1,6 +1,5 @@
-export function Udland(){
+import { BodyCard } from '../components/body/bodyCard'
 
-    return(
-        <h2>Jo vist</h2>
-    )
+export function Udland(){
+    return <BodyCard kategori="udland"/>
 }

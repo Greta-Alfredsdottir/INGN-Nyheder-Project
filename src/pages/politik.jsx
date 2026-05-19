@@ -1,8 +1,5 @@
-
+import { BodyCard } from '../components/body/bodyCard'
 
 export function Politik(){
-
-    return(
-        <h2>Drop dead</h2>
-    )
+    return <BodyCard kategori="politik"/>
 }

@@ -1,9 +1,9 @@
 
-
+import { BodyCard } from '../components/body/bodyCard'
 
 export function Alle(){
 
     return(
-        <h2>feck off</h2>
+        <BodyCard/>
     )
 }

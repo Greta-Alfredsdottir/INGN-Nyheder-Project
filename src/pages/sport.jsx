@@ -1,8 +1,5 @@
-
+import { BodyCard } from '../components/body/bodyCard'
 
 export function Sport(){
-
-    return(
-        <h2>Kasper bestemmer <span>IKKE</span></h2>
-    )
+    return <BodyCard kategori="sport"/>
 }

@@ -5,6 +5,8 @@ export const Query = gql `
 
 query {
   nyhedscards {
+    id
+    slug
     overskrift
     dato
     skribent 

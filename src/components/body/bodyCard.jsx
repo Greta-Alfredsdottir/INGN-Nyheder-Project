@@ -3,9 +3,15 @@ import { useGraphQuery } from "../../utils/hook";
 import { Query } from "../../utils/Query";
 import {ArticleCards} from "../cards/cards"
 
-export const BodyCard = () => {
+export const BodyCard = ({ kategori }) => {
     const {data, isLoading, error} = useGraphQuery(Query);
-    const NyhedsCards = data?.nyhedscards ?? [];
+    let NyhedsCards = data?.nyhedscards ?? [];
+    
+    // Filtrer efter kategori hvis givet
+    if (kategori) {
+        NyhedsCards = NyhedsCards.filter(artikel => artikel.kategori === kategori);
+    }
+    
     if (isLoading){
         return <div>Indlæser Nyheder</div>;
     }
@@ -13,7 +19,9 @@ export const BodyCard = () => {
         return <div>Fejl ved indlæsning {error.message}</div>
     }
     
-
+    if (NyhedsCards.length === 0) {
+        return <div>Ingen artikler fundet</div>;
+    }
 
     return(
         <section className={style.gamlekrop}>

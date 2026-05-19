@@ -1,8 +1,5 @@
-
+import { BodyCard } from '../components/body/bodyCard'
 
 export function Samfund(){
-
-    return(
-        <h2>TAK</h2>
-    )
+    return <BodyCard kategori="samfund"/>
 }
