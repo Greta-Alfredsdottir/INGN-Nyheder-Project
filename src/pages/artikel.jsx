@@ -10,7 +10,7 @@ export function Artikel(){
   if (isLoading) return <div>Indlæser artikel...</div>
   if (error) return <div>Fejl: {error.message}</div>
   
-  // Finder artikel ved slug eller id
+  // Finder artikel ved slug eller id, læs mere knap
   const artikel = data?.nyhedscards?.find(item => item.slug === slug || item.id === slug)
   
   if (!artikel) return <h2>Artikel ikke fundet</h2>

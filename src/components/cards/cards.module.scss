@@ -1,14 +1,13 @@
 .cardContainer {
-    background-color: #f6f3f3;
-    border: 1px solid #400303;
-    border-radius: 8px;
+    background-color: #ffffff;
+    
 }
 
 .cardContent {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 16px;
+    gap: 20px;
+    padding: 20px;
 }
 
 .overskrift {
@@ -24,7 +23,8 @@
 .dato {
     margin: 0;
     font-size: 12px;
-    color: #666;
+    color: #c52525;
+
 }
 
 .billeder {
@@ -63,22 +63,74 @@
     }
 
     .cardContainer:nth-child(5) {
+        
         grid-row: span 2 / span 2;
         grid-column-start: 2;
         grid-row-start: 3;
         img{
             height: 700px;
+            }
+    }
+
+    .cardContainer:nth-child(6),
+    .cardContainer:nth-child(7) {
+        grid-column: span 2 / span 2;
+    }
+
+    
+    .cardContainer:nth-child(6) .cardContent,
+    .cardContainer:nth-child(7) .cardContent {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 16px;
+        align-items: start;
+      
+    }
+    
+    .cardContainer:nth-child(6) .cardContent img,
+    .cardContainer:nth-child(7) .cardContent img {
+        grid-column: 2;
+        grid-row: 1 / -1;
+        width: 250px;
+        height: auto;
+        object-fit: cover;
+    }
+    
+    
+    .cardContainer:nth-child(6) {
+         grid-row-start: 5;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        img{
+            
+            width: 100%;
+            display: block;
+        }
+        .cardContent{
+            display: flex;
+            align-items:flex-start;
+            flex-direction: column;
         }
     }
 
-    .cardContainer:nth-child(6) {
-        grid-column: span 2 / span 2;
-        grid-row-start: 5;
-    }
-
     .cardContainer:nth-child(7) {
-        grid-column: span 2 / span 2;
         grid-row-start: 6;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        img{
+            
+            width: 100%;
+            display: block;
+        }
+        .cardContent{
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+        }
     }
 
     .cardContainer:nth-child(8) {

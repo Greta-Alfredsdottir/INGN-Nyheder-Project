@@ -1,31 +1,94 @@
-// Styling til Navbar
+// Styling til Navbar - Mobile First
 
-.navStyling{
+.navStyling {
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 4px;
+    justify-content: space-between;
+    align-items: center;
     background-color: #ffffff;
-    
-    
-    div {
-        display: flex;
-        flex-direction: row;
-        gap: 10px;
-        text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
 
-       }
-       a {
+.section {
+    position: static;
+    font-size: 2rem;
+    color: #c52525;
+}
+
+// Hamburger button - mobile first
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    
+    span {
+        width: 25px;
+        height: 3px;
+        background-color: #242424;
+        border-radius: 2px;
+        transition: all 0.3s ease;
+    }
+    
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+// Navigation links
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    background-color: #ffffff;
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    
+    &.open {
+        max-height: 500px;
+    }
+    
+    a {
+        padding: 1rem;
         text-decoration: none;
         color: #242424;
-       }
-
-}
-.section{
-    position: absolute;
-    color: #c52525;
-    left: 0;
-
-  
+        border-bottom: 1px solid #f0f0f0;
+        transition: background-color 0.2s;
+        
+        &:hover {
+            background-color: #f5f5f5;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        position: static;
+        flex-direction: row;
+        max-height: none;
+        gap: 10px;
+        box-shadow: none;
+        flex: 1;
+        justify-content: center;
+        
+        a {
+            padding: 0;
+            border-bottom: none;
+            
+            &::before {
+                content: "| ";
+            }
+        }
+        
+        a:last-child::after {
+            content: " |";
+        }
+    }
 }

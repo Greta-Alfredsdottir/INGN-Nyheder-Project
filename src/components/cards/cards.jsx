@@ -24,8 +24,8 @@ export const ArticleCards = ({NyhedsCard}) => {
                     <button className="minButton">Se mere</button>
                 </Link>
             </p>
-            {NyhedsCard.billeder?.url && <img className={style.billeder} src={NyhedsCard.billeder.url} alt=""/>}
             </div>
+            {NyhedsCard.billeder?.url && <img className={style.billeder} src={NyhedsCard.billeder.url} alt=""/>}
         </section>
        
     )
