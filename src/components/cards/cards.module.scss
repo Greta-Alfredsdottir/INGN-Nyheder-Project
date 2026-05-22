@@ -24,7 +24,6 @@
     margin: 0;
     font-size: 12px;
     color: #c52525;
-
 }
 
 .billeder {
@@ -35,7 +34,7 @@
 
 // Desktop layout - fancy grid positions, Dette er lavet med hjælp af copilot
 @media (min-width: 768px) {
-
+  
     /* Første card - fyldt hele bredde */
     .cardContainer:nth-child(1) {
         grid-column: span 2 / span 2;
@@ -82,9 +81,9 @@
     .cardContainer:nth-child(7) .cardContent {
         display: grid;
         grid-template-columns: 1fr auto;
-        gap: 16px;
+        gap: 10px;
         align-items: start;
-      
+        padding: 10px;
     }
     
     .cardContainer:nth-child(6) .cardContent img,
@@ -104,7 +103,6 @@
         justify-content: space-between;
         flex-direction: row-reverse;
         img{
-            
             width: 100%;
             display: block;
         }
