@@ -27,7 +27,7 @@ export const BodyCard = ({ kategori }) => {
     return(
         <section className={style.gamlekrop}>
             {NyhedsCards.map((nyhedscards, index) =>(
-                <ArticleCards key={`${nyhedscards.overskrift}-${index}`} NyhedsCard={nyhedscards}/>
+                <ArticleCards key={`${nyhedscards.overskrift}-${index}`} item={nyhedscards}/>
             ))}
         </section>
     )
