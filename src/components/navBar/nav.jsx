@@ -14,6 +14,9 @@ export function Navbar() {
                 className={style.hamburger} 
                 onClick={toggleMenu}
                 aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
 
             {/* Navigation links */}
