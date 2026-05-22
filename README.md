@@ -25,6 +25,4 @@ Når man alle de ovenstående krav, kan man give sig i kast med følgende bonus 
     Når man trykker opdater skal der komme en ny side hvor man kan redigere i artiklen og gemme den opdaterede artikel i sit CMS
     Når man trykker slet skal artiklen slettes fra sit CMS
 
-Link til design fil: 
-
-Figma Design Fil
+HUSK når der laves ".env" skal der lægges navnet på den i "gitIgnore"
